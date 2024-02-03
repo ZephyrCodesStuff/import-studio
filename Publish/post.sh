@@ -1,8 +1,8 @@
 #!/bin/sh
 
-chmod +x "$2/Apollo/Apollo"
-chmod +x "$2/Update/ApolloUpdate"
+chmod +x "$2/Import/Import"
+chmod +x "$2/Update/ImportUpdate"
 
-open /Applications/Utilities/Terminal.app "$2/Apollo/Apollo"
+open /Applications/Utilities/Terminal.app "$2/Import/Import"
 
 exit 0

@@ -1,0 +1,96 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="Import.Components.ColorPicker"
+             DetachedFromVisualTree="Unloaded">
+
+  <Grid RowDefinitions="*,Auto" Width="170">
+    <Grid Grid.Row="0" ColumnDefinitions="*,Auto">
+      <Border Grid.Column="0" Margin="0 0 5 0" BorderBrush="{DynamicResource ThemeBorderHighBrush}" BorderThickness="1">
+        <Grid>
+          <Grid x:Name="MainColor">
+            <Grid.Background>
+              <LinearGradientBrush StartPoint="0%,50%" EndPoint="100%,50%">
+                <GradientStop Offset="0" Color="#FFFFFFFF" />
+                <GradientStop Offset="1" Color="#FFFF0000" />
+              </LinearGradientBrush>
+            </Grid.Background>
+          </Grid>
+
+          <Grid>
+            <Grid.Background>
+              <LinearGradientBrush StartPoint="50%,0%" EndPoint="50%,100%">
+                <GradientStop Offset="0" Color="#00000000" />
+                <GradientStop Offset="1" Color="#FF000000" />
+              </LinearGradientBrush>
+            </Grid.Background>
+
+            <Canvas Background="Transparent" ClipToBounds="true" x:Name="MainCanvas"
+                    PointerPressed="Canvas_MouseDown" PointerReleased="Canvas_MouseUp" PointerMoved="Main_MouseMove">
+
+              <Canvas Margin="-5 -5 0 0" Width="10" Height="10" Cursor="Hand" Background="Transparent" x:Name="MainThumb"
+                      PointerPressed="MainThumb_MouseDown" PointerReleased="MainThumb_MouseUp" PointerMoved="Main_MouseMove">
+
+                <Ellipse Width="10" Height="10" Stroke="#FFFFFFFF" StrokeThickness="1" />
+                <Ellipse Canvas.Top="1" Canvas.Left="1" Width="8" Height="8" Stroke="#FF000000" StrokeThickness="1" />
+              </Canvas>
+              
+              <Rectangle IsVisible="false" x:Name="TopBar" Fill="#FFFFFF" Opacity="0.5" Width="2" />
+              <Rectangle IsVisible="false" x:Name="BottomBar" Fill="#FFFFFF" Opacity="0.5" Width="2"/>
+              <Rectangle IsVisible="false" x:Name="LeftBar" Fill="#FFFFFF" Opacity="0.5" Height="2"/>
+              <Rectangle IsVisible="false" x:Name="RightBar" Fill="#FFFFFF" Opacity="0.5" Height="2"/>
+            </Canvas>
+          </Grid>
+        </Grid>
+      </Border>
+
+      <Border Grid.Column="1" BorderBrush="{DynamicResource ThemeBorderHighBrush}" BorderThickness="1">
+        <Grid>
+          <Grid.Background>
+            <LinearGradientBrush StartPoint="50%,0%" EndPoint="50%,100%">
+              <GradientStop Offset="0"              Color="#FFFF0000" />
+              <GradientStop Offset="0.166666666667" Color="#FFFFFF00" />
+              <GradientStop Offset="0.333333333333" Color="#FF00FF00" />
+              <GradientStop Offset="0.5"            Color="#FF00FFFF" />
+              <GradientStop Offset="0.666666666667" Color="#FF0000FF" />
+              <GradientStop Offset="0.833333333333" Color="#FFFF00FF" />
+              <GradientStop Offset="1"              Color="#FFFF0000" />
+            </LinearGradientBrush>
+          </Grid.Background>
+
+          <Canvas Background="Transparent" ClipToBounds="true" Width="13" x:Name="HueCanvas"
+                  PointerPressed="Canvas_MouseDown" PointerReleased="Canvas_MouseUp" PointerMoved="Hue_MouseMove">
+
+            <Canvas Margin="0 -4" Width="13" Height="10" Cursor="Hand" Background="Transparent" x:Name="HueThumb"
+                    PointerPressed="HueThumb_MouseDown" PointerReleased="HueThumb_MouseUp" PointerMoved="Hue_MouseMove">
+
+              <Path Fill="#FF000000"
+                    Data="M 0,0 L 4,4 0,8 Z" />
+              <Path Fill="#FF000000"
+                    Data="M 13,0 L 9,4 13,8 Z" />
+            </Canvas>
+          </Canvas>
+        </Grid>
+      </Border>
+    </Grid>
+
+    <StackPanel Grid.Row="1" HorizontalAlignment="Center" Orientation="Horizontal" Margin="0 5 0 0">
+      <TextBox Background="{DynamicResource ThemeControlLowBrush}" BorderThickness="0 0 0 1" MinWidth="50" Padding="2" x:Name="Hex"
+               KeyDown="Text_KeyDown" LostFocus="Hex_Unfocus" PointerReleased="Hex_MouseUp" />
+      
+      <StackPanel Orientation="Horizontal" x:Name="RGB_Panel" Spacing="4">
+        <TextBox Background="{DynamicResource ThemeControlLowBrush}" BorderThickness="0 0 0 1" MinWidth="20" Padding="2" x:Name="Red"
+                 KeyDown="Text_KeyDown" PointerReleased="RGB_MouseUp" LostFocus="RGB_Unfocus" />
+
+        <TextBox Background="{DynamicResource ThemeControlLowBrush}" BorderThickness="0 0 0 1" MinWidth="20" Padding="2" x:Name="Green"
+                 KeyDown="Text_KeyDown" PointerReleased="RGB_MouseUp" LostFocus="RGB_Unfocus" />
+
+        <TextBox Background="{DynamicResource ThemeControlLowBrush}" BorderThickness="0 0 0 1" MinWidth="20" Padding="2" x:Name="Blue"
+                 KeyDown="Text_KeyDown" PointerReleased="RGB_MouseUp" LostFocus="RGB_Unfocus" />
+      </StackPanel>
+      
+      <Canvas Margin="5 0 0 0" Width="15" Height="15" VerticalAlignment="Center">
+        <Ellipse Width="15" Height="15" x:Name="Color" Fill="White" />
+      </Canvas>
+    </StackPanel>
+  </Grid>
+</UserControl>

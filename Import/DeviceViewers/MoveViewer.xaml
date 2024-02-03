@@ -1,0 +1,22 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="Import.DeviceViewers.MoveViewer"
+             xmlns:Components="clr-namespace:Import.Components"
+             Margin="10 5"
+             DetachedFromVisualTree="Unloaded">
+
+  <Grid RowDefinitions="*,Auto" Width="60">
+    <Components:MoveDial Grid.Row="0" x:Name="Offset" />
+
+    <StackPanel Grid.Row="1" Margin="0 5 0 0" HorizontalAlignment="Center" Spacing="5">
+      <Border BorderBrush="{DynamicResource ThemeBorderHighBrush}" BorderThickness="0 0 0 1" HorizontalAlignment="Center">
+        <ComboBox BorderThickness="0" Background="Transparent" x:Name="GridMode" SelectionChanged="GridMode_Changed">
+          <ComboBoxItem>10x10</ComboBoxItem>
+          <ComboBoxItem>8x8</ComboBoxItem>
+        </ComboBox>
+      </Border>
+
+      <CheckBox HorizontalAlignment="Center" x:Name="Wrap" Click="Wrap_Changed">Wrap</CheckBox>
+    </StackPanel>
+  </Grid>
+</UserControl>

@@ -6,7 +6,7 @@
 # Build
 Build
 Dist
-Apollo-*
+Import-*
 
 # macOS
 .DS_Store

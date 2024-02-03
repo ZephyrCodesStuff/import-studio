@@ -1,0 +1,20 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="Import.DeviceViewers.FlipViewer"
+             xmlns:Components="clr-namespace:Import.Components"
+             Margin="10 5"
+             DetachedFromVisualTree="Unloaded">
+
+  <StackPanel VerticalAlignment="Center" Spacing="5" Width="90">
+    <Border BorderBrush="{DynamicResource ThemeBorderHighBrush}" BorderThickness="0 0 0 1">
+      <ComboBox BorderThickness="0" Background="Transparent" HorizontalAlignment="Center" x:Name="FlipMode" SelectionChanged="Mode_Changed">
+        <ComboBoxItem>Horizontal</ComboBoxItem>
+        <ComboBoxItem>Vertical</ComboBoxItem>
+        <ComboBoxItem>Diagonal+</ComboBoxItem>
+        <ComboBoxItem>Diagonal-</ComboBoxItem>
+      </ComboBox>
+    </Border>
+
+    <CheckBox HorizontalAlignment="Center" x:Name="Bypass" Click="Bypass_Changed">Bypass</CheckBox>
+  </StackPanel>
+</UserControl>

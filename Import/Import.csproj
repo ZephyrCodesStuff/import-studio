@@ -1,0 +1,56 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <RuntimeFrameworkVersion>8.0.0</RuntimeFrameworkVersion>
+    <TargetFramework>net8.0</TargetFramework>
+    <RuntimeIdentifiers>win-x64;osx-x64;linux-x64</RuntimeIdentifiers>
+    <LangVersion>9.0</LangVersion>
+    <SatelliteResourceLanguages>en</SatelliteResourceLanguages>
+    <ServerGarbageCollection>false</ServerGarbageCollection>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+    <StartupObject>Import.Core.Program</StartupObject>
+    <Version>1.0.0</Version>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <!--<DefineConstants>PRERELEASE</DefineConstants>-->
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <RuntimeHostConfigurationOption Include="System.Globalization.Invariant" Value="true" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Avalonia" Version="0.9.999-cibuild0006058-beta" />
+    <PackageReference Include="Avalonia.Desktop" Version="0.9.999-cibuild0006058-beta" />
+    <PackageReference Include="DiscordRichPresence" Version="1.0.121">
+      <NoWarn>NU1701</NoWarn>
+    </PackageReference>
+    <PackageReference Include="Humanizer.Core" Version="2.6.2" />
+    <PackageReference Include="Octokit" Version="0.32.0" />
+    <PackageReference Include="SkiaSharp" Version="1.68.1.1" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Compile Update="**/*.cs">
+      <DependentUpon>%(Filename).xaml</DependentUpon>
+    </Compile>
+    <AvaloniaResource Include="**/*.xaml">
+      <SubType>Designer</SubType>
+    </AvaloniaResource>
+    <AvaloniaResource Include="Resources/*" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <None Update="librtmidi.dylib">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="librtmidi.so">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="rtmidi.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="elevate.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+</Project>

@@ -17,7 +17,7 @@ assignees: mat1jaczyyy
 <!--A clear and concise description of any alternative solutions or features you've considered.-->
 
 ### Your setup
-<!--Describe the system you are running on. Usually, just the OS and apollo version is fine.-->
+<!--Describe the system you are running on. Usually, just the OS and import version is fine.-->
 
 ### Additional context
 <!--Add any other context or screenshots about the feature request here.-->

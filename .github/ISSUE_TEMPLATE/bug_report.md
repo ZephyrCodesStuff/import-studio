@@ -17,7 +17,7 @@ assignees: mat1jaczyyy
 <!--A clear and concise description of what you expected to happen.-->
 
 ### Your setup
-<!--Describe the system you are running on. Usually, just the OS and apollo version is fine.-->
+<!--Describe the system you are running on. Usually, just the OS and import version is fine.-->
 
 ### Additional context
 <!--Add any other context about the problem here, including screenshots.-->

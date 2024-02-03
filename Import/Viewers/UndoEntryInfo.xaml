@@ -1,0 +1,10 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="Import.Viewers.UndoEntryInfo"
+             xmlns:Components="clr-namespace:Import.Components"
+             DetachedFromVisualTree="Unloaded">
+  
+  <Grid Background="Transparent" x:Name="Background" PointerPressed="Click">
+    <TextBlock HorizontalAlignment="Center" x:Name="Description" />
+  </Grid>
+</UserControl>

@@ -1,0 +1,104 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="Import.Viewers.CollapsedDeviceViewer"
+             xmlns:sys="clr-namespace:System;assembly=mscorlib"
+             xmlns:Components="clr-namespace:Import.Components"
+             DetachedFromVisualTree="Unloaded">
+  
+  <UserControl.Resources>
+    <SolidColorBrush x:Key="TitleBrush" />
+    
+    <Components:ImportContextMenu x:Key="DeviceContextMenu" MenuAction="ContextMenu_Action">
+      <MenuItem Header="Cut" />
+      <MenuItem Header="Copy" />
+      <MenuItem Header="Duplicate" />
+      <MenuItem Header="Paste" />
+      <MenuItem Header="Replace" />
+
+      <Separator />
+
+      <MenuItem Header="Delete" />
+      <MenuItem Header="Mute" x:Name="DeviceMute" />
+
+      <Separator />
+
+      <MenuItem Header="Group" />
+      <MenuItem Header="Choke" />
+
+      <Separator />
+      
+      <MenuItem Header="Export" />
+      <MenuItem Header="Import" />
+    </Components:ImportContextMenu>
+
+    <Components:ImportContextMenu x:Key="GroupContextMenu" MenuAction="ContextMenu_Action">
+      <MenuItem Header="Cut" />
+      <MenuItem Header="Copy" />
+      <MenuItem Header="Duplicate" />
+      <MenuItem Header="Paste" />
+      <MenuItem Header="Replace" />
+
+      <Separator />
+      
+      <MenuItem Header="Delete" />
+      <MenuItem Header="Mute" x:Name="GroupMute" />
+
+      <Separator />
+      
+      <MenuItem Header="Group" />
+      <MenuItem Header="Ungroup" />
+      <MenuItem Header="Choke" />
+
+      <Separator />
+      
+      <MenuItem Header="Export" />
+      <MenuItem Header="Import" />
+    </Components:ImportContextMenu>
+
+    <Components:ImportContextMenu x:Key="ChokeContextMenu" MenuAction="ContextMenu_Action">
+      <MenuItem Header="Cut" />
+      <MenuItem Header="Copy" />
+      <MenuItem Header="Duplicate" />
+      <MenuItem Header="Paste" />
+      <MenuItem Header="Replace" />
+
+      <Separator />
+      
+      <MenuItem Header="Delete" />
+      <MenuItem Header="Mute" x:Name="ChokeMute" />
+
+      <Separator />
+      
+      <MenuItem Header="Group" />
+      <MenuItem Header="Choke" />
+      <MenuItem Header="Unchoke" />
+
+      <Separator />
+      
+      <MenuItem Header="Export" />
+      <MenuItem Header="Import" />
+    </Components:ImportContextMenu>
+  </UserControl.Resources>
+  
+  <StackPanel Orientation="Horizontal" MaxHeight="223" HorizontalAlignment="Center" VerticalAlignment="Stretch" x:Name="Root">
+    <Border Background="{DynamicResource TitleBrush}" BorderThickness="1" CornerRadius="5" DragDrop.AllowDrop="true" x:Name="Contents">
+      <Grid Background="Transparent" PointerPressed="Drag" x:Name="Draggable">
+        <LayoutTransformControl>
+          <LayoutTransformControl.LayoutTransform>
+            <RotateTransform Angle="270" />
+          </LayoutTransformControl.LayoutTransform>
+
+          <Grid Margin="0 2 0 0">
+            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" x:Name="Title" />
+          </Grid>
+        </LayoutTransformControl>
+      </Grid>
+    </Border>
+
+    <Grid>
+      <Components:DeviceAdd Added="Device_Add" Action="Device_Action" DragDrop.AllowDrop="true" x:Name="DropZoneAfter" />
+
+      <Components:Indicator Margin="0 5" ChainKind="false" HorizontalAlignment="Center" VerticalAlignment="Top" x:Name="Indicator" />
+    </Grid>
+  </StackPanel>
+</UserControl>

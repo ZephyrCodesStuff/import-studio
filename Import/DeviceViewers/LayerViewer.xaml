@@ -1,0 +1,26 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="Import.DeviceViewers.LayerViewer"
+             xmlns:Components="clr-namespace:Import.Components"
+             Margin="10 5"
+             DetachedFromVisualTree="Unloaded">
+  
+  <StackPanel VerticalAlignment="Center" Width="110">
+    <Border BorderBrush="{DynamicResource ThemeBorderHighBrush}" BorderThickness="0 0 0 1">
+      <Grid Margin="0 0 0 5" ColumnDefinitions="*,*">
+        <Components:Dial Grid.Column="0" x:Name="Target" Title="Target" Minimum="-100" Maximum="100" Default="100" Exponent="1" Round="0" Unit="" Centered="true"
+                         ValueChanged="Target_Changed" />
+
+        <Components:Dial Grid.Column="1" x:Name="Range" Title="Range" Minimum="1" Maximum="200" Default="200" Exponent="1" Round="0" Unit="" DisabledText="Unused"
+                         ValueChanged="Range_Changed" />
+      </Grid>
+    </Border>
+
+    <ComboBox BorderThickness="0" Background="Transparent" HorizontalAlignment="Center" x:Name="BlendingMode" SelectionChanged="Mode_Changed">
+      <ComboBoxItem>Normal</ComboBoxItem>
+      <ComboBoxItem>Screen</ComboBoxItem>
+      <ComboBoxItem>Multiply</ComboBoxItem>
+      <ComboBoxItem>Mask</ComboBoxItem>
+    </ComboBox>
+  </StackPanel>
+</UserControl>

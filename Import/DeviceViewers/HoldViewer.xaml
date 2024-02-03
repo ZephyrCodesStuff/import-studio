@@ -1,0 +1,31 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="Import.DeviceViewers.HoldViewer"
+             xmlns:Components="clr-namespace:Import.Components"
+             Margin="10 5"
+             DetachedFromVisualTree="Unloaded">
+
+  <Grid RowDefinitions="*,*" Width="125">
+    <Border Grid.Row="0" BorderBrush="{DynamicResource ThemeBorderHighBrush}" BorderThickness="0 0 0 1">
+      <StackPanel Margin="0 0 0 5" HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="5" Width="78">
+        <Border BorderBrush="{DynamicResource ThemeBorderHighBrush}" BorderThickness="0 0 0 1" HorizontalAlignment="Center">
+          <ComboBox BorderThickness="0" Background="Transparent" x:Name="HoldMode" SelectionChanged="HoldMode_Changed">
+            <ComboBoxItem>Trigger</ComboBoxItem>
+            <ComboBoxItem>Minimum</ComboBoxItem>
+            <ComboBoxItem>Infinite</ComboBoxItem>
+          </ComboBox>
+        </Border>
+
+        <CheckBox x:Name="Release" Click="Release_Changed">Release</CheckBox>
+      </StackPanel>
+    </Border>
+    
+    <Grid Grid.Row="1" ColumnDefinitions="*,*" Margin="5 5 5 0">
+      <Components:Dial Grid.Column="0" Margin="0 0 5 0" x:Name="Duration" Title="Duration" Minimum="1" Maximum="30000" Default="1000" Exponent="4.9209091868" Round="0" Unit="ms" DisabledText="Infinite" AllowSteps="true"
+                       ValueChanged="Duration_Changed" ModeChanged="Duration_ModeChanged" StepChanged="Duration_StepChanged" />
+    
+      <Components:Dial Grid.Column="1" Margin="5 0 0 0" x:Name="Gate" Title="Gate" Minimum="1" Maximum="400" Default="100" Exponent="2.0108883161" Round="0" Unit="%"
+                       ValueChanged="Gate_Changed" />
+    </Grid>
+  </Grid>
+</UserControl>

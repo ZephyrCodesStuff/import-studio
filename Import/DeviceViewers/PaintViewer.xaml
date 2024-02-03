@@ -1,0 +1,9 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="Import.DeviceViewers.PaintViewer"
+             xmlns:Components="clr-namespace:Import.Components"
+             Margin="10 5"
+             DetachedFromVisualTree="Unloaded">
+
+  <Components:ColorPicker x:Name="Picker" ColorChanged="Color_Changed" />
+</UserControl>
