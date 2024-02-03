@@ -3,7 +3,7 @@
 ### Fly your Launchpad to the moon. ☆.。.:*・°☆
 
 <p align="center">
-  <img src="https://github.com/mat1jaczyyy/import-studio/raw/master/Assets/readme.png">
+  <img src="https://github.com/ZephyrCodesStuff/import-studio/raw/master/Assets/readme.png">
 </p>
 <br>
 
