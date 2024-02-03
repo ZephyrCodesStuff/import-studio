@@ -1,6 +1,6 @@
 # Import Studio
 
-### Fly your Launchpad to the moon. ☆.。.:*・°☆
+### Import your Launchpad to the moon. ☆.。.:*・°☆
 
 <p align="center">
   <img src="https://github.com/ZephyrCodesStuff/import-studio/raw/master/Assets/readme.png">
@@ -13,7 +13,7 @@ Import Studio solves all the problems we experience every day in Live including 
 
 ## Demonstration
 
-Here are a few Launchpad covers created by Launchpad enthusiasts entirely in Import Studio. See for yourself what our software is capable of.
+Here are a few Launchpad covers created by Launchpad enthusiasts entirely in Import Studio. See for yourself what our software is capable of importing.
 
 <p align="center">
   <a href="https://www.youtube.com/watch?v=a-MwTVH-wX8" title="Terravita x Chime x Akylla - Go Higher">
@@ -35,7 +35,7 @@ Here are a few Launchpad covers created by Launchpad enthusiasts entirely in Imp
 
 ## Getting Started
 
-Download Import Studio from the [Releases](https://github.com/mat1jaczyyy/import-studio/releases) page. Configure your Launchpads in the Preferences and start a new Project to begin working. We recommend you read the [Documentation](https://github.com/mat1jaczyyy/import-studio/wiki) or check out the [Video Tutorials](https://www.youtube.com/playlist?list=PLKC4R3X00beY0aB_f_ZIa3shqJX7do4mH).
+Download Import Studio from the [Releases](https://github.com/mat1jaczyyy/import-studio/releases) page. Configure your Launchpads in the Preferences and start a new Project to begin importing. We recommend you read the [Documentation](https://github.com/mat1jaczyyy/import-studio/wiki) or check out the [Video Tutorials](https://www.youtube.com/playlist?list=PLKC4R3X00beY0aB_f_ZIa3shqJX7do4mH).
 
 ## Documentation and Support
 
