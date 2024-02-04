@@ -7,7 +7,7 @@
 </p>
 <br>
 
-Import Studio is a standalone editor and live playback engine for Launchpad light effects, inspired by the traditional workflow of Ableton Live. The innovation lies in support for true RGB colors (all 262k of them!), an improved workflow and better resource management. Import Studio has no audio capabilities whatsoever, as it's designed to run alongside Ableton Live which has proven its robustness when it comes to running audio-related tasks. Taking all that load off Live's engine should improve audio quality and input lag, too. Import Studio takes full advantage of the multithreading capabilities of modern processors and also allows for adjusting the intensity of the light effects globally, making sure everyone can run all project files as much as their setup can support them.
+Import Studio is a standalone live playback engine for Launchpad light effects, inspired by the traditional workflow of Ableton Live. The innovation lies in support for basic RGB colors (all 127 of them!), an improved playback and better resource management. Import Studio has no audio capabilities whatsoever, as it's designed to run alongside Ableton Live which has proven its robustness when it comes to running audio-related tasks. Taking all that load off Live's engine should improve audio quality and input lag, too. Import Studio takes full advantage of the multithreading capabilities of modern processors and also allows for adjusting the intensity of the light effects globally, making sure everyone can run all project files as much as their setup can support them.
 
 Import Studio solves all the problems we experience every day in Live including the unintuitive workflow, limited color palette, inconsistent undo behavior, differences between Launchpad models, CPU lag, large RAM usage and more; while bringing new and revolutionary features to the table.
 
@@ -16,20 +16,20 @@ Import Studio solves all the problems we experience every day in Live including 
 Here are a few Launchpad covers created by Launchpad enthusiasts entirely in Import Studio. See for yourself what our software is capable of importing.
 
 <p align="center">
-  <a href="https://www.youtube.com/watch?v=a-MwTVH-wX8" title="Terravita x Chime x Akylla - Go Higher">
-    <img src="http://img.youtube.com/vi/a-MwTVH-wX8/mqdefault.jpg">
+  <a href="https://www.youtube.com/watch?v=lekfZs1jJH0" title="Ed Sheeran - Shape Of You (Ellis Remix) // Launchpad Cover">
+    <img src="http://img.youtube.com/vi/lekfZs1jJH0/mqdefault.jpg">
   </a>
 
-  <a href="https://www.youtube.com/watch?v=DDJ0JPgd8fw" title="Owl City - Fireflies">
-    <img src="http://img.youtube.com/vi/DDJ0JPgd8fw/mqdefault.jpg">
+  <a href="https://www.youtube.com/watch?v=3xM2S0fhc54" title="KDrew - Circles // World's First 17 Launchpad Performance">
+    <img src="http://img.youtube.com/vi/3xM2S0fhc54/mqdefault.jpg">
   </a>
 
-  <a href="https://www.youtube.com/watch?v=yA-bFsYRG4I" title="Borgeous, Taylr Renee - Sweeter Without You">
-    <img src="http://img.youtube.com/vi/yA-bFsYRG4I/mqdefault.jpg">
+  <a href="https://www.youtube.com/watch?v=tmlzkP4t-Pk" title="Paul Flint - SAVAGE // World's First 21 Launchpad Cover">
+    <img src="http://img.youtube.com/vi/tmlzkP4t-Pk/mqdefault.jpg">
   </a>
 
-  <a href="https://www.youtube.com/watch?v=caiNv3bC5YI" title="Jonas Aden, Castion, Danny Leax - Tell Me A Lie">
-    <img src="http://img.youtube.com/vi/caiNv3bC5YI/mqdefault.jpg">
+  <a href="https://youtu.be/KfeXRjxYDXg&t=8" title="Mako - Beam (Kaskobi Live Edit) // Launchpad Cover">
+    <img src="http://img.youtube.com/vi/IpWhY4_Nw44/mqdefault.jpg">
   </a>
 </p>
 
