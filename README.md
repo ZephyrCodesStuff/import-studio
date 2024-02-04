@@ -9,7 +9,7 @@
 
 Import Studio is a standalone live playback engine for Launchpad light effects, inspired by the traditional workflow of Ableton Live. The innovation lies in support for basic RGB colors (all 127 of them!), an improved playback and better resource management. Import Studio has no audio capabilities whatsoever, as it's designed to run alongside Ableton Live which has proven its robustness when it comes to running audio-related tasks. Taking all that load off Live's engine should improve audio quality and input lag, too. Import Studio takes full advantage of the multithreading capabilities of modern processors and also allows for adjusting the intensity of the light effects globally, making sure everyone can run all project files as much as their setup can support them.
 
-Import Studio solves all the problems we experience every day in Live including the intuitive workflow, extensive color palette, consistent undo behavior, consistency between Launchpad models, CPU performance, tiny RAM usage and more; while bringing new and revolutionary features to the table.
+Import Studio solves all the problems we experience every day in Live including the intuitive workflow, extensive color palette, consistent undo behavior, similarities between Launchpad models, CPU performance, tiny RAM usage and more; while bringing new and revolutionary features to the table.
 
 ## Demonstration
 
